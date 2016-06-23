@@ -1,0 +1,235 @@
+/*    TO style ALL PAGES ABOUT KAPGON */
+
+/******************************************************************************
+
+	Written by TCHONLA Jules Bertrand for BACKGROUND ENGINEERING & INNOVATION 2016
+
+
+$$$$$$$$$$$$		$$$$$$$$$$$$        $$$$$$$$$$            
+	$$              	 $$             $$      $$
+    $$              	 $$             $$   $$$
+ 	$$              	 $$             $$ $$$       
+	$$              	 $$             $$    $$                   
+	$$               	 $$             $$      $$               
+	$$      $$    $$$$$$$$$      $$     $$$$$$$$$$                  
+ 
+
+
+
+****************************************************************************/
+
+
+@charset 'utf-8';
+
+/* Import differents Librairies  */
+
+@import url( 'assets/css/reset.css' );
+@import url( 'assets/css/normalize.min.css' );
+
+
+
+@import url( 'assets/fonts/fonts.css' );
+
+
+/* RESET DEFAULT ATTRIBUT a hack IE6 ,because default size is larger in IE6 */
+
+
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+
+@-ms-viewport{
+	width: device-width;
+	
+	
+}
+@viewport{
+	width: device-width;
+	
+	
+}
+
+/*a:active,a:focus,a:visited{
+	border: 0 !important;
+	background-color: green;
+}
+*/
+/*========================== BASES COLORS ============================*/
+
+
+
+
+
+
+/*========================== FONTS ==================================*/
+
+/*@Font_Menu_Footer: normal .8em 'lato-Bold',trebuchet MS,Lucida consolas ,sans-serif ,Helvetica;
+@Font_Menu: normal .7em 'lato-Bold',trebuchet MS,Lucida consolas ,sans-serif ,Helvetica;
+
+@Box_shadow:0 0 10px rgba(0,0,0,.2);
+@linkColorActifMenu: rgb(102,0,0);
+@link_Know_more:rgb(206,178,141);
+@bordure:1px solid #ceb28d;
+@box-bounce-hover:0 0 10px rgba(79,15,15,.8);
+@font-indicateur:bold .8em 'roboto',Tahoma,Lucida Console ,sans-serif ,Helvetica;
+@font_text:normal 1em 'roboto-light',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_button:normal 1.125em 'lato-Bold',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_span:normal 0.7em 'roboto-light-italik',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@rounder-border:100%;
+@HR-color:rgb(229,229,229);
+
+@Color_headline_light:rgb(230,209,181);
+@Color_headline_accent:rgb(206,178,141);
+@Color_text:#878787;*/
+
+
+
+
+
+@font_text:normal 1.625em 'lato-light',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_text_input:normal .9em 'lato',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@color_text:#fafafa;
+@COLOR_BTN:rgba(166,124,78,.8);
+@font_success_sub:normal 1em 'lato-Black',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_em: normal 1em 'lato-Italic',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+
+/*========================== GLOBAL ==================================*/
+
+
+img{
+	max-width: 100%;
+}
+
+
+
+input[type="button"]{
+
+	display: inline-block;
+	margin-bottom:none;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+body{
+	background-color:#fafafa;
+	max-height: 100%; 
+
+
+
+	p{
+		font:@font_text;
+		color:@color_text;
+	}
+	
+
+	header{
+		margin:1em auto ;
+		text-align: center;
+
+		img{
+			max-width: 100% !important;
+		}
+	}
+	
+	.global_content{
+
+		padding-top:12em;
+		background: transparent url(assets/images/img/bg_bei.png) top left  no-repeat; 
+		background-size: cover;
+		height:50em;
+
+		.soumission {
+
+			padding:1.5em 0;
+			text-align: center;
+			background-color:rgba(206,178,141,.8);
+			p {
+					.accent{
+						font:normal 2em 'lato-light','Trebuchet','roboto',Lucida Console;
+						color: #a67c4e;
+					}
+					em{
+						font:@font_em;
+					}
+			}
+
+			strong{
+				color:#a67c4e;
+			}
+			
+		}
+
+		.solde{
+			margin:1.2em 0;
+			padding:1.5em 0;
+			text-align: center;
+			.row{
+
+				.check{
+
+					display: table;
+					
+					.btn-kapgon-sucess{
+
+						/*float: left;*/
+						background-color: @COLOR_BTN;
+						color:#fff;
+						-webkit-border-radius: 0em .5em .5em 0 ;
+						-moz-border-radius: 0em .5em .5em 0 ;
+						-ms-border-radius: 0em .5em .5em 0 ;
+						border-radius: 0em .5em .5em 0 ;
+						width: 100%;
+						height: 3.7em !important;
+						line-height: 1.5em;
+						text-transform: uppercase;
+						font:@font_success_sub;
+						transition: all ease-out .5s;
+
+						&:hover{
+							border:.1em solid @COLOR_BTN;
+							color: @COLOR_BTN;
+							background:rgba(250,250,250,.8);
+							transition: all ease-out .5s;
+						}
+					}
+
+					input[type="text"]{
+
+						-webkit-border-radius: .5em 0em 0 .5em ;
+						-o-border-radius: .5em 0em 0 .5em ;
+						-moz-border-radius: .5em 0em 0 .5em ;
+						-ms-border-radius: .5em 0em 0 .5em ;
+						border-radius: .5em 0em 0 .5em ;
+						width: 100%;
+						height: 4em !important;
+						line-height: 1.5em;
+						padding-left: 2.5em;
+						color:@color_text;
+						font:@font_text_input;
+						border-color: #a67c4e;
+
+						background:transparent url(assets/images/img/bg_email.png) 1% 50% no-repeat;
+						background-color:rgba(206,178,141,.8);
+
+					}
+				}
+
+				
+				
+
+			}
+		}
+
+
+
+	}
+}
