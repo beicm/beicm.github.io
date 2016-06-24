@@ -3,6 +3,6 @@
 
 $(document).ready( function(){
 
-	$( this ).attr('placeholder').css( 'color':'#fafafa' );
+	
 } );
 
