@@ -1,0 +1,64 @@
+@charset 'utf-8';
+/* load Lato fonts*/
+@font-face{
+	font-family:lato;
+	src:url(lato/Lato-Bold.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:lato-light ;
+	src:url(lato/Lato-Light.ttf);
+	font-weight: 400;
+}
+
+@font-face{
+	font-family:lato-Heavy ;
+	src:url(lato/Lato-Heavy.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:lato-Regular ;
+	src:url(lato/Lato-Regular.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:lato-Black ;
+	src:url(lato/Lato-Black.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:lato-Bold ;
+	src:url(lato/Lato-Bold.ttf);
+	font-weight: 400;
+}
+
+/*  END  FONTS */
+
+/* Load ROBOTO FONTS TEXT*/
+
+@font-face{
+	font-family:roboto;
+	src:url(roboto/Roboto-Bold.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:roboto-light ;
+	src:url(roboto/Roboto-Light.ttf);
+	font-weight: 400;
+}
+
+@font-face{
+	font-family:roboto-Regular ;
+	src:url(roboto/Roboto-Regular.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:roboto-Condensed-Bold ;
+	src:url(roboto/RobotoCondensed-Bold.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family:roboto-Condensed-light ;
+	src:url(roboto/RobotoCondensed-Light.ttf);
+	font-weight: 400;
+}

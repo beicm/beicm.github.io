@@ -23,8 +23,8 @@ $$$$$$$$$$$$		$$$$$$$$$$$$        $$$$$$$$$$
 
 /* Import differents Librairies  */
 
-@import url( 'assets/css/reset.css' );
 @import url( 'assets/css/normalize.min.css' );
+@import url( 'assets/css/reset.css' );
 
 
 
@@ -67,12 +67,14 @@ $$$$$$$$$$$$		$$$$$$$$$$$$        $$$$$$$$$$
 
 /*========================== FONTS ==================================*/
 
-@font_text:normal 1.5em 'lato-light',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_text:normal 1.625em 'lato-light',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
 @font_text_input:normal .9em 'lato',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
 @color_text:#fafafa;
 @COLOR_BTN:rgba(166,124,78,.8);
 @font_success_sub:normal 1em 'lato-Black',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
-@font_em: normal .9em 'lato-Italic',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_em:normal .8em 'lato-Italic',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
+@font_button_site:normal 1em 'roboto',Trebuchet MS,Lucida Console ,sans-serif ;
+@font_optional:normal 1.3em 'roboto-Regular',Trebuchet MS,Lucida Console ,sans-serif ;
 
 /*========================== GLOBAL ==================================*/
 
@@ -81,7 +83,9 @@ img{
 	max-width: 100%;
 }
 
-
+.evidence{
+	color:#fafafa !important;
+}
 
 input[type="button"]{
 
@@ -146,6 +150,7 @@ body{
 		}
 
 		.solde{
+
 			margin:1.2em 0;
 			padding:1.5em 0;
 			text-align: center;
@@ -197,13 +202,94 @@ body{
 						background:transparent url(assets/images/img/bg_email.png) 1% 50% no-repeat;
 						background-color:rgba(206,178,141,.8);
 
-						
-
 					}
 				}
 
 				
 				
+
+			}
+			.row{
+				/*border:1px solid #bbb;*/
+				
+				.autre_access{
+
+					color:#fff;
+					font:@font_optional;
+					width: 100%;
+
+
+
+				}
+				button{
+
+					font:@font_button_site;
+					display:block;
+					margin:1.2em auto;
+					border:none;
+
+					a{
+						color:@COLOR_BTN;
+					}
+				}
+				
+				.btn_go:focus{
+					outline: none;
+				}
+				.btn_go{
+
+					font-size: 1.1em;
+					color: @COLOR_BTN;
+					/*cursor: pointer;*/
+					background-color:#fafafa;
+					opacity: .8;
+					/*border-color:#ddd;
+					border-color:#a67c4e;*/
+					box-shadow:0 0 5px rgb(166,124,78);
+					-webkit-box-shadow:0 0 5px rgb(166,124,78);
+					-moz-box-shadow:0 0 5px rgb(166,124,78);
+					-o-box-shadow:0 0 5px rgb(166,124,78);
+					width: 70px;
+					height: 70px;
+					border-radius: 70px;
+					-webkit-border-radius: 70px;
+					-moz-border-radius: 70px;
+					-o-border-radius: 70px;	
+					/*padding:0;*/
+					position: relative;
+					overflow: hidden;
+					transition:all .5s;
+					
+
+					.btn-icon{
+						width: 70px;
+						height: 70px;
+						text-align: center;
+						position: absolute;
+						top: 0;
+						left: 0;
+						line-height: 70px;
+						
+					}	
+
+					.btn-text{
+						position: absolute;
+						top:0;
+						left:75px;
+						padding-bottom: 1em !important;
+
+
+					}
+
+
+
+				}
+
+				.btn-alast:hover{					
+					width:30%;
+
+
+				}
 
 			}
 		}
