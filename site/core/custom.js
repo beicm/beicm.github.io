@@ -72,7 +72,7 @@ $(document).ready( function(){
 
 			zoom:11,
 			//customize map 
-			disableDefaultUI:false,
+			disableDefaultUI:true,
 			scrollwheel:true,
 			draggable:true,
 			mapTypeId:google.maps.MapTypeId.ROADMAP,
@@ -83,7 +83,7 @@ $(document).ready( function(){
 				style:google.maps.ZoomControlStyle.DEFAULT
 			},
 			panControlOptions:{
-				position:google.maps.ControlPosition.LEFTBOTTOM
+				position:google.maps.ControlPosition.LEFT_BOTTOM
 			}
 
 		},
