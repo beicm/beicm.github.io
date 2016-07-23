@@ -1,14 +1,5 @@
 'use strict';
 
-// jQuery( document ).ready( function(){
-// 	// console.log( 'jquery is ready' );
-
-// 	jQuery( window ).scroll( function(){
-// 		// console.log(jQuery( this ).scrollTop());
-// 		var $_test = jQuery( 'section[data-type="background"]' );
-// 		console.log( jQuery( this ).scrollTop() );
-// 	});
-// });
 
 jQuery( function(){
 	//cache window object
