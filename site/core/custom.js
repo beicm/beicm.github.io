@@ -74,7 +74,7 @@ $(document).ready( function(){
 			//customize map 
 			disableDefaultUI:true,
 			scrollwheel:true,
-			draggable:true,
+			draggable:false,
 			mapTypeId:google.maps.MapTypeId.ROADMAP,
 			maxZoom:13,
 			minZoom:10,
