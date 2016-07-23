@@ -1,5 +1,14 @@
 'use strict';
 
+// jQuery( document ).ready( function(){
+// 	// console.log( 'jquery is ready' );
+
+// 	jQuery( window ).scroll( function(){
+// 		// console.log(jQuery( this ).scrollTop());
+// 		var $_test = jQuery( 'section[data-type="background"]' );
+// 		console.log( jQuery( this ).scrollTop() );
+// 	});
+// });
 
 jQuery( function(){
 	//cache window object
@@ -44,9 +53,9 @@ $(document).ready( function(){
 
 	// determine height position of my cursor
 
-	/*$( window ).scroll(  function(){
+	$( window ).scroll(  function(){
 		console.log( $( this ).scrollTop() );
-	} );*/
+	} );
 
 	$("a[href^='#']").click(function(e){
 
@@ -56,47 +65,5 @@ $(document).ready( function(){
 
 	});
 
-
-//#################### MAP  ###########
-
-	(function(window, google ){
-	// map options
-
-	var 
-
-		options_geo = {
-			center:{
-				lat: 4.0540905,
-				lng: 9.7359671
-			},
-
-			zoom:11,
-			//customize map 
-			disableDefaultUI:true,
-			scrollwheel:true,
-			draggable:false,
-			mapTypeId:google.maps.MapTypeId.ROADMAP,
-			maxZoom:13,
-			minZoom:10,
-			zoomControlOptions:{
-				position:google.maps.ControlPosition.LEFT_BOTTOM,
-				style:google.maps.ZoomControlStyle.DEFAULT
-			},
-			panControlOptions:{
-				position:google.maps.ControlPosition.LEFT_BOTTOM
-			}
-
-		},
-
-		element = document.getElementById('bei_map'),
-	//map
-		map = new google.maps.Map( element , options_geo );
-
-}(window, google ));
-
-
-
-
-
-} ) // END READy
+} )
 
