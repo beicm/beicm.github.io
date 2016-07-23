@@ -53,9 +53,9 @@ $(document).ready( function(){
 
 	// determine height position of my cursor
 
-	$( window ).scroll(  function(){
+	/*$( window ).scroll(  function(){
 		console.log( $( this ).scrollTop() );
-	} );
+	} );*/
 
 	$("a[href^='#']").click(function(e){
 
@@ -107,5 +107,5 @@ $(document).ready( function(){
 
 
 
-} )
+} ) // END READy
 
