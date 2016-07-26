@@ -1,29 +1,19 @@
 'use strict';
 
-// jQuery( document ).ready( function(){
-// 	// console.log( 'jquery is ready' );
-
-// 	jQuery( window ).scroll( function(){
-// 		// console.log(jQuery( this ).scrollTop());
-// 		var $_test = jQuery( 'section[data-type="background"]' );
-// 		console.log( jQuery( this ).scrollTop() );
-// 	});
-// });
 
 jQuery( function(){
 	//cache window object
 	var mnEcran = jQuery( window );
-	//recuperation des différentes attribut crées
+	
 
 	jQuery( 'section[data-type="background"]' ).each( function(){
-		//recuperatin de la section à annuler 
+		 
 		var imgbg_ = jQuery( this );
-		// console.log( imgbg_.data( 'speed' ) ); 
-		// Donner les instructions d'animations
+		
 
 		jQuery( window ).scroll( function() {
 			var yPos = - ( mnEcran.scrollTop() / imgbg_.data( 'speed' ) );
-			// console.log( yPos );
+			
 			var Cord_ = ' 50% ' + yPos + ' px ';
 			jQuery( imgbg_ ).css( {backgroundPosition: Cord_} );
 
@@ -53,9 +43,9 @@ $(document).ready( function(){
 
 	// determine height position of my cursor
 
-	$( window ).scroll(  function(){
-		console.log( $( this ).scrollTop() );
-	} );
+	// $( window ).scroll(  function(){
+	// 	console.log( $( this ).scrollTop() );
+	// } );
 
 	$("a[href^='#']").click(function(e){
 
@@ -65,5 +55,24 @@ $(document).ready( function(){
 
 	});
 
-} )
+
+		// AWESOME  MENU  
+
+
+
+		$('.nav_phone .navicon').click(  function(){
+
+			var  _man = $(this).parent().children( '.navmenu' );
+
+			if( $( _man ).css( 'display' ) == 'none'  ){
+				$( _man ).addClass( 'show' );
+				$( this ).children('.fa').removeClass( 'fa-navicon' ).addClass( 'fa-close' );
+			}else{
+				$( _man ).removeClass( 'show' );
+				$( this ).children('.fa').addClass( 'fa-navicon' ).removeClass( 'fa-close' );
+			}
+			
+		} );
+
+} );
 
