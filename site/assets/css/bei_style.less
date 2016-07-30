@@ -87,6 +87,7 @@ $$$$$$$$$$$$		$$$$$$$$$$$$        $$$$$$$$$$
 
 body{
 	background: #fafafa;
+	h2.accent {text-transform: uppercase; };
 	
 }
 
@@ -117,6 +118,7 @@ h5{
 h4{
 	font: normal 1.1em 'lato-Bold',Trebuchet MS,Lucida Console ,sans-serif ,Helvetica;
 	color:@Color_headline_light;
+
 }
 
 h3{
@@ -230,7 +232,7 @@ a:link,a:hover,a:focus{
 		position: fixed;
 		top:0;
 		left: 20px;
-		z-index: 1;
+		z-index: 2;
 		width: 100%;
 		height: 3em;
 		-moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
@@ -394,7 +396,7 @@ a:link,a:hover,a:focus{
 		-webkit-transform:rotate(-45deg);
 		-o-transform:rotate(-45deg);
 		-ms-transform:rotate(-45deg);
-		z-index: 2;
+		z-index: 3;
 
 		figure{
 			
@@ -723,6 +725,63 @@ a:link,a:hover,a:focus{
 
 	}
 
+	
+	#helpyou{
+		position:relative;
+		background-color: transparent;
+		background-image: url(assets/images/img/me.png);
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		height: 21em;
+		width: 100%;
+		margin:1em auto;
+		padding:1em;
+		background-color: rgb(255,255,255);
+		cursor: pointer;
+		
+		&::before{
+			content:"";
+			display: block;
+			background-color:rgba(0,0,0,.7);
+			width: 100%;height: inherit;
+			position: absolute;
+			top:0;
+			-webkit-transition:background .5s,width .5s;
+			-moz-transition:background .5s,width .5s;
+			-o-transition:background .5s,width .5s;
+			-ms-transition:background .5s,width .5s;
+			transition:background .5s,width .5s;
+			left: 0;
+			z-index: 1;
+		}
+
+		&:hover::before{
+			background-color:rgba(0,0,0,.7) !important;
+			width: 35%;
+		}
+
+		.bei_doforu{
+
+			margin:1em 0;
+			text-align: left !important;
+
+			
+			.ff{
+				.fff{
+					border-left:.4em dashed @Color_headline_light;
+
+					
+				}	
+			}
+			
+		}
+		
+
+		
+
+	}
+
+
 
 	.contact_us{
 		
@@ -732,9 +791,11 @@ a:link,a:hover,a:focus{
 
 			width: 80%;
 			float: left;
-			img{
+			img,#bei_map{
 				min-width: 100%;
+				/*max-height: 30rem;*/
 			}
+
 		}
 
 		.contact_group{
@@ -1002,9 +1063,17 @@ a:link,a:hover,a:focus{
 @media screen and (max-width: 30em) {
 	
 	body{
+	
+		/*.slider{
 
-		.show{
+			padding-top: 0 !important;
 			
+			figure{
+				margin:0 !important;
+			}
+		} */
+		.show{
+
 			display: block;
 		}
 		/*redefine size of menu */
@@ -1111,6 +1180,7 @@ a:link,a:hover,a:focus{
 
 		h4{
 			font-size: .8em !important;
+
 		}
 
 		h3{
@@ -1194,6 +1264,32 @@ a:link,a:hover,a:focus{
 				-ms-transform:rotate(120deg);
 				transform:rotate(120deg);
 			}
+		}
+
+
+		#helpyou{
+
+			.bei_doforu{
+				background-color:rgba(255,255,255,.8);
+			}
+
+			&::before{
+				content:"";
+				display: block;
+				background-color:transparent !important;
+				/*width: 100%;height: inherit;
+				position: absolute;
+				top:0;
+				-webkit-transition:background .5s,width .5s;
+				left: 0;
+				z-index: 1;*/
+			}
+
+			&:hover::before{
+				background-color:rgba(0,0,0,.7) !important;
+				width: 0% !important;
+			}
+
 		}
 
 		.foowrap .follow_us{
