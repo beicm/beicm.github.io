@@ -78,12 +78,6 @@ $(document).ready( function(){
 
 
 
-	function error(err) {
-		console.warn('ERROR(' + err.code + '): ' + err.message);
-	};
-
-	navigator.geolocation.getCurrentPosition( success , error, options);
-
 
 
 
