@@ -77,57 +77,14 @@ $(document).ready( function(){
 
 
 	
-	
+	 
+	};
 
+	function error(err) {
+		console.warn('ERROR(' + err.code + '): ' + err.message);
+	};
 
-	//  GOOGLE MAP
-
-
-	(function(window, google ){
-		
-		// map options
-
-		var 
-
-		options_geo = {
-		center:{
-			lat: 4.0541559,
-			lng: 9.7360293
-		},
-
-		zoom:11,
-		//customize map 
-		disableDefaultUI:false,
-		scrollwheel:true,
-		draggable:true,
-		mapTypeId:google.maps.MapTypeId.ROADMAP,
-		maxZoom:13,
-		minZoom:10,
-		zoomControlOptions:{
-			position:google.maps.ControlPosition.LEFT_BOTTOM,
-			style:google.maps.ZoomControlStyle.DEFAULT
-		},
-		panControlOptions:{
-			position:google.maps.ControlPosition.LEFTBOTTOM
-		}
-
-		},
-
-		element = document.getElementById('bei_map'),
-		//map
-		map = new google.maps.Map( element , options_geo );
-
-	}(window, google ));
-
-
-
-	// END MAP 
-
-
-
-
-
-
+	navigator.geolocation.getCurrentPosition( success , error, options);
 
 
 
